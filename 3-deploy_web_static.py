@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-    Creates and distributes an archive to the web servers
-"""
+''' Project to creates and distributes an archive to the web servers '''
 
 from fabric.api import env, local, put, run
 from datetime import datetime

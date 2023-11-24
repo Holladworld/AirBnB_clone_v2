@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""
+'''
     Distributes an archive to your web servers,
     using the function do_deploy
     def do_deploy(archive_path):
-    Return False iff archive path doesn't exist
-"""
+    Return False if archive path doesn't exist
+'''
 
 from fabric.api import put, run, env
 from os.path import exists
@@ -15,9 +15,8 @@ env.password = None
 
 
 def do_deploy(archive_path):
-    """
-    Deploys an archive to a server
-    """
+    '''    Deploys an archive to a server   '''
+
     if exists(archive_path) is False:
         return False
     try:
@@ -36,4 +35,4 @@ def do_deploy(archive_path):
         print("New version deployed!")
         return True
     except FileNotFoundError:
-        return False
+                return False
