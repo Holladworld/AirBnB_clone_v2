@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 '''
-    
     Generates a .tgz archive from contents of
     the web_static folder of your AirBnB Clone
     repo, using the function do_pack.
